@@ -91,5 +91,9 @@ Crisiane Josef A. Caranto
 
 ## Acknowledgments
 Credits to: @AnalyticShala
+
+Prediction Code was used by me to learn simple n-gram. It was also used in the program.
+
 Link: https://github.com/abdullah-cse27/ngram-language-model
+
 *Luid ing Amanung Kapampangan!*

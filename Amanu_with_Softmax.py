@@ -84,7 +84,7 @@ class KapampanganLanguageModel:
         return probs[:top_k]
     
 if __name__ == "__main__":
-    with open(r'C:\Users\Siane\Documents\VS CODE\PYTHON PROGRAMS\AMANU\training.txt', 'r', encoding='utf-8') as f:
+    with open(r'C:\Users\PYTHON PROGRAMS\AMANU\training.txt', 'r', encoding='utf-8') as f:
         corpus = [line.strip() for line in f if line.strip()]
     kapampanganLangModel = KapampanganLanguageModel(n=3, alpha=0.5)
     kapampanganLangModel.fit(corpus)
@@ -116,11 +116,11 @@ while True:
 
     trainingResult = input("\nDid Amanu give you the correct prediction? (yes/no): ")
     if trainingResult.lower() == 'yes':
-        with open(r'C:\Users\Siane\Documents\VS CODE\PYTHON PROGRAMS\AMANU\training.txt', 'a', encoding='utf-8') as file:
+        with open(r'C:\Users\PYTHON PROGRAMS\AMANU\training.txt', 'a', encoding='utf-8') as file:
             file.write(f"{alphaSyllable} {predictions[0][0]}\n")
         print("Great! Amanu is learning and improving with your feedback.")
     else:
-        with open(r'C:\Users\Siane\Documents\VS CODE\PYTHON PROGRAMS\AMANU\training.txt', 'a', encoding='utf-8') as file:
+        with open(r'C:\Users\PYTHON PROGRAMS\AMANU\training.txt', 'a', encoding='utf-8') as file:
             file.write(f"{alphaSyllable} {predictions[1][0]}\n")
             file.write(f"{alphaSyllable} {predictions[2][0]}\n")
         print("Thank you for your feedback! Amanu will use this information to improve its predictions in the future.")

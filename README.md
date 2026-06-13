@@ -90,5 +90,6 @@ This is a learning/exploratory project focused on the Kapampangan language. The 
 Crisiane Josef A. Caranto
 
 ## Acknowledgments
-
+Credits to: @AnalyticShala
+Link: https://github.com/abdullah-cse27/ngram-language-model
 *Luid ing Amanung Kapampangan!*

@@ -189,7 +189,7 @@ class KapampanganLanguageModel:
         return probs[:top_k]
     
 if __name__ == "__main__":
-    with open(r'C:\Users\Siane\Documents\VS CODE\PYTHON PROGRAMS\training.txt', 'r', encoding='utf-8') as f:
+    with open(r'C:\Users\PYTHON PROGRAMS\training.txt', 'r', encoding='utf-8') as f:
         corpus = [line.strip() for line in f if line.strip()]
 
     kapampanganLangModel = KapampanganLanguageModel(n=3, alpha=0.5)
@@ -224,7 +224,7 @@ while True:
     if trainingResult.lower() == 'yes':
         print("Great! Amanu is learning and improving with your feedback.")
     else:
-        with open(r'C:\Users\Siane\Documents\VS CODE\PYTHON PROGRAMS\training.txt', 'a', encoding='utf-8') as file:
+        with open(r'C:\Users\PYTHON PROGRAMS\training.txt', 'a', encoding='utf-8') as file:
             file.write(f"{alphaSyllable} {predictions[1][0]}\n")
             file.write(f"{alphaSyllable} {predictions[2][0]}\n")
             #adds more predictions from the top 2 and top 3 to the training data for better learning
